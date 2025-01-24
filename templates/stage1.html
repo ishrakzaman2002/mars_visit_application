@@ -1,0 +1,39 @@
+<!-- <form method="post">
+    <label>Full Name:</label>
+    <input type="text" name="full_name" required>
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+    <label>Nationality:</label>
+    <input type="text" name="nationality" required>
+    <label>Contact Information:</label>
+    <input type="email" name="contact" required>
+    <button type="submit">Next</button>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 1: Personal Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="post">
+        <h1>Stage 1: Personal Information</h1>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="contact">Contact Information (Email):</label>
+        <input type="email" id="contact" name="contact" required>
+
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

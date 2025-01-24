@@ -1,0 +1,21 @@
+<!-- <h1>Application Submitted Successfully!</h1>
+<p>Thank you for applying, {{ data['full_name'] }}!</p>
+<a href="/">Back to Home</a> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="success-message">
+        <h1>Application Submitted Successfully!</h1>
+        <p>Thank you, {{ data['full_name'] }}! Your application for the Mars visit has been submitted.</p>
+        <p>We will contact you at {{ data['contact'] }} with more details.</p>
+        <a href="/">Return to Home</a>
+    </div>
+</body>
+</html>

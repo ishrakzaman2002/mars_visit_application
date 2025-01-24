@@ -1,0 +1,45 @@
+<!-- <form method="post">
+    <label>Departure Date:</label>
+    <input type="date" name="departure_date" required>
+    <label>Return Date:</label>
+    <input type="date" name="return_date" required>
+    <label>Accommodation:</label>
+    <select name="accommodation">
+        <option value="Space Hotel">Space Hotel</option>
+        <option value="Martian Base">Martian Base</option>
+    </select>
+    <label>Special Requests:</label>
+    <textarea name="special_requests"></textarea>
+    <button type="submit">Next</button>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 2: Travel Preferences</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="post">
+        <h1>Stage 2: Travel Preferences</h1>
+        <label for="departure_date">Departure Date:</label>
+        <input type="date" id="departure_date" name="departure_date" required>
+
+        <label for="return_date">Return Date:</label>
+        <input type="date" id="return_date" name="return_date" required>
+
+        <label for="accommodation">Accommodation Preference:</label>
+        <select id="accommodation" name="accommodation" required>
+            <option value="Space Hotel">Space Hotel</option>
+            <option value="Martian Base">Martian Base</option>
+        </select>
+
+        <label for="special_requests">Special Requests or Preferences:</label>
+        <textarea id="special_requests" name="special_requests" rows="4" placeholder="Enter any special requests..."></textarea>
+
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
